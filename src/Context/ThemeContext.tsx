@@ -1,12 +1,9 @@
 import { useState, useEffect, createContext, useContext } from "react";
-import type {
-  ThemeContextData,
-  ThemeContextProps,
-} from "../Types/ThemeContext";
+import type { ContextProps, ThemeContextData } from "../Types/ThemeContext";
 
 const ThemeContext = createContext<ThemeContextData | null>(null);
 
-const ThemeProvider = ({ children }: ThemeContextProps) => {
+const ThemeProvider = ({ children }: ContextProps) => {
   const [theme, setTheme] = useState(() => {
     return window.localStorage.getItem("Theme") || "light";
   });
