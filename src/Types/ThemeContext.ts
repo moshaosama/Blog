@@ -5,6 +5,6 @@ export interface ThemeContextData {
   handleToggleTheme: () => void;
 }
 
-export interface ThemeContextProps {
+export interface ContextProps {
   children: ReactNode;
 }
