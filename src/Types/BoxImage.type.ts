@@ -5,5 +5,5 @@ export interface BoxImageProps {
   Width: string;
   isText: boolean;
   Height: string;
-  children: ReactElement;
+  children?: ReactElement;
 }
