@@ -13,7 +13,7 @@ const Footer = () => {
         theme === "light"
           ? "bg-[#1b1b1b] text-white"
           : "bg-[#ffdb4d] text-black",
-        "mx-10 py-10 mt-20 rounded-xl flex flex-col pb-2 items-center gap-8"
+        "mx-10 max-sm:mx-2 py-10 mt-20 rounded-xl flex flex-col pb-2 items-center gap-8"
       )}
     >
       <TextFooter />
