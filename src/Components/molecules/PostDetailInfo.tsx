@@ -9,19 +9,25 @@ import { TextAnimation } from "../Atomic/TextAnimation";
 const PostDetailInfo = ({
   ImageUrl,
   Height,
+  flexDirection = "row",
   Width,
   Header,
   textAnimation,
 }: PostDetailInfoProps) => {
   const { theme } = useTheme();
   return (
-    <div className="flex gap-5 items-center">
-      <BoxImage
-        Height={Height}
-        ImageURL={ImageUrl}
-        Width={Width}
-        isText={false}
-      />
+    <div
+      className="flex gap-5 group overflow-hidden cursor-pointer"
+      style={{ flexDirection: flexDirection }}
+    >
+      <div className="group-hover:scale-105 transition-all duration-700">
+        <BoxImage
+          Height={Height}
+          ImageURL={ImageUrl}
+          Width={Width}
+          isText={false}
+        />
+      </div>
       <div>
         <HeaderPostBlog Title={Header} />
         <div className={cn(theme === "light" ? "text-black" : "text-white")}>
