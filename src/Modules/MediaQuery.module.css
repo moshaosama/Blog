@@ -1,0 +1,15 @@
+@media (width < 40rem) {
+  .BoxImage {
+    width: 100% !important;
+    height: 60vh !important;
+  }
+  .textAnimation {
+    font-size: 1.4pc !important;
+  }
+  .section {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .PostDetail {
+    flex-direction: column !important;
+  }
+}
