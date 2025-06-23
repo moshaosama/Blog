@@ -14,15 +14,15 @@ const BoxImage = ({
         <img
           src={ImageURL}
           alt="Image.png"
-          className={cn(
-            `object-cover rounded-2xl hover:scale-110 transition-all duration-700 group`
-          )}
+          className={cn(`object-cover rounded-2xl`)}
           style={{ width: Width, height: Height }}
         />
-        <div
-          className="absolute top-0 bg-[#00000070] rounded-2xl h-full"
-          style={{ width: Width }}
-        ></div>
+        {isText && (
+          <div
+            className="absolute top-0 bg-[#00000070] rounded-2xl h-full"
+            style={{ width: Width }}
+          ></div>
+        )}
         <div className="absolute bottom-20 left-20">
           {isText && <div className="text-white">{children}</div>}
         </div>
