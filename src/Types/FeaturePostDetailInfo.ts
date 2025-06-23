@@ -7,5 +7,5 @@ export interface PostDetailInfoProps {
   Header: string;
   textAnimation: ReactElement;
   Date?: string;
-  flexDirection: string;
+  flexDirection: any;
 }
