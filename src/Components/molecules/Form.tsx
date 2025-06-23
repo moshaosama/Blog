@@ -1,6 +1,5 @@
 import InputForm from "../Atomic/InputForm";
 import Button from "../Atomic/Button";
-import LinkSocialMedia from "./LinkSocialMedia";
 
 const Form = () => {
   return (

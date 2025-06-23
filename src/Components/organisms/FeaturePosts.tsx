@@ -1,4 +1,3 @@
-import HeaderForSection from "../Atomic/HeaderForSection";
 import { TextAnimation } from "../Atomic/TextAnimation";
 import Article_Feature_Posts from "../molecules/Article_Feature_Posts";
 import PostDetailInfo from "../molecules/PostDetailInfo";
