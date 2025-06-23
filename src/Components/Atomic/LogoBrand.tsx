@@ -9,11 +9,16 @@ export const LogoBrand = () => {
         src="profile-img.webp"
         alt="profileImage.png"
         className={cn(
-          "w-16 border-1 rounded-full",
+          "w-16 max-sm:w-12 border-1 rounded-full",
           theme === "light" ? "border-black" : "border-white"
         )}
       />
-      <h1 className={cn(theme === "light" ? "text-black" : "text-white")}>
+      <h1
+        className={cn(
+          theme === "light" ? "text-black" : "text-white",
+          "font-bold"
+        )}
+      >
         Mo4aBlogs
       </h1>
     </div>
