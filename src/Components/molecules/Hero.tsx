@@ -4,7 +4,7 @@ import { TextAnimation } from "../Atomic/TextAnimation";
 
 const Hero = () => {
   return (
-    <div className="mx-10">
+    <div className="mx-10 max-sm:mx-2">
       <BoxImage
         ImageURL="charlesdeluvio-cZr2sgaxy3Q-unsplash-113acabc.webp"
         Width="100%"
@@ -18,7 +18,7 @@ const Hero = () => {
               fontSize="2pc"
               Title="Building Progressive Web Apps: Bridging the Gap Between Web and Mobile"
             />
-            <p className="text-2xl">
+            <p className="text-2xl max-sm:hidden">
               Integrating mindfulness practices helps developers cultivate
               present-moment awareness, fostering focus, problem-solving, and
               work-life balance.
