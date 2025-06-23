@@ -5,6 +5,7 @@ import BoxImage from "../Atomic/BoxImage";
 import DatePost from "../Atomic/DatePost";
 import HeaderPostBlog from "../Atomic/HeaderPostBlog";
 import { TextAnimation } from "../Atomic/TextAnimation";
+import MediaQueryStyle from "../../Modules/MediaQuery.module.css";
 
 const PostDetailInfo = ({
   ImageUrl,
@@ -15,9 +16,13 @@ const PostDetailInfo = ({
   textAnimation,
 }: PostDetailInfoProps) => {
   const { theme } = useTheme();
+  const { PostDetail } = MediaQueryStyle;
   return (
     <div
-      className="flex gap-5 group overflow-hidden cursor-pointer"
+      className={cn(
+        "flex gap-5 max-sm:mx-2 group overflow-hidden cursor-pointer",
+        PostDetail
+      )}
       style={{ flexDirection: flexDirection }}
     >
       <div className="group-hover:scale-105 transition-all duration-700">
