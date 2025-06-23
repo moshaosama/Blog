@@ -8,8 +8,8 @@ const RecentlyPosts = () => {
 
   return (
     <Sections GridColumns={3} Title={"Recent Posts"}>
-      {Blogs.result.slice(0, 6).map((blog) => (
-        <div className="flex justify-center">
+      {Blogs.result.slice(0, 6).map((blog, index: number) => (
+        <div className="flex justify-center" key={index}>
           <PostDetailInfo
             Header={blog.category}
             Height="15pc"
