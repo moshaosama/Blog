@@ -1,3 +1,5 @@
+import { useTheme } from "../../Context/ThemeContext";
+import { cn } from "../../lib/cn";
 import type { PostDetailInfoProps } from "../../Types/FeaturePostDetailInfo";
 import BoxImage from "../Atomic/BoxImage";
 import DatePost from "../Atomic/DatePost";
@@ -11,6 +13,7 @@ const PostDetailInfo = ({
   Header,
   textAnimation,
 }: PostDetailInfoProps) => {
+  const { theme } = useTheme();
   return (
     <div className="flex gap-5 items-center">
       <BoxImage
@@ -21,7 +24,9 @@ const PostDetailInfo = ({
       />
       <div>
         <HeaderPostBlog Title={Header} />
-        <TextAnimation Title={textAnimation} fontSize="20px" />
+        <div className={cn(theme === "light" ? "text-black" : "text-white")}>
+          <TextAnimation Title={textAnimation} fontSize="20px" />
+        </div>
         <DatePost />
       </div>
     </div>
