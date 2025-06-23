@@ -1,11 +1,9 @@
-import Hero from "./Components/molecules/Hero";
-import Header from "./Components/templates/Header";
+import RouterPages from "./Routes/RouterPages";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <RouterPages />
     </>
   );
 }
