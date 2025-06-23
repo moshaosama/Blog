@@ -4,7 +4,7 @@ import { TextAnimation } from "../Atomic/TextAnimation";
 
 const Article_Feature_Posts = () => {
   return (
-    <div className="mx-10">
+    <div className="mx-10 max-sm:mx-2">
       <BoxImage
         Height="50%"
         ImageURL="paul-esch-laurent-oZMUrWFHOB4-unsplash-1e203eea.webp"
