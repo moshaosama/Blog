@@ -7,7 +7,7 @@ import { useTheme } from "../../Context/ThemeContext";
 const LinkSocialMedia = () => {
   const { theme } = useTheme();
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 max-sm:hidden">
       <LinkHeader
         children={
           <FaLinkedin
