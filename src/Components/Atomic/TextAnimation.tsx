@@ -1,12 +1,17 @@
 import { useTheme } from "../../Context/ThemeContext";
 import { cn } from "../../lib/cn";
 import type { TextAnimationProps } from "../../Types/TextAnimation.type";
+import MediaQueryStyle from "../../Modules/MediaQuery.module.css";
 
 export const TextAnimation = ({ Title, fontSize }: TextAnimationProps) => {
   const { theme } = useTheme();
+  const { textAnimation } = MediaQueryStyle;
   return (
     <div className="group cursor-pointer">
-      <h1 className="font-bold" style={{ fontSize: fontSize }}>
+      <h1
+        className={cn("font-bold", textAnimation)}
+        style={{ fontSize: fontSize }}
+      >
         {Title}
       </h1>
       <span
