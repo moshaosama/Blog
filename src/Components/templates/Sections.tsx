@@ -7,7 +7,7 @@ const Sections = ({ GridColumns, Title, children }: SectionsProps) => {
     <section>
       <HeaderForSection Title={Title} />
       <div
-        className="grid"
+        className="grid gap-y-10"
         style={{ gridTemplateColumns: `repeat(${GridColumns}, 1fr)` }}
       >
         {React.Children.map(children, (child: any) => {
