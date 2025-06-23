@@ -5,7 +5,7 @@ import { cn } from "../../lib/cn";
 const HeaderForSection = ({ Title }: { Title: string | ReactElement }) => {
   const { theme } = useTheme();
   return (
-    <div className="mx-10 my-20">
+    <div className="mx-10 max-sm:mx-2 my-20">
       <h1
         className={cn(
           theme === "light" ? "text-black" : "text-white",
