@@ -6,8 +6,9 @@ const ButtonTags = ({ BackGround, Title }: ButtonTagsProps) => {
     <div>
       <button
         className={cn(
-          `bg-${BackGround} text-white cursor-pointer w-52 py-3 border-1 hover:scale-105 transition-all duration-500 border-white text-center rounded-full`
+          `text-white cursor-pointer w-52 py-3 border-1 hover:scale-105 transition-all duration-500 border-white text-center rounded-full`
         )}
+        style={{ backgroundColor: BackGround }}
       >
         {Title}
       </button>
