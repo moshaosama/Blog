@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import Header from "../Components/organisms/Header";
 import { cn } from "../lib/cn";
 import { useTheme } from "../Context/ThemeContext";
+import Footer from "../Components/organisms/Footer";
 
 const MainLayout = () => {
   const { theme } = useTheme();
@@ -14,6 +15,7 @@ const MainLayout = () => {
     >
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 };
