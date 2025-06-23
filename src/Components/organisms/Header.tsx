@@ -4,7 +4,7 @@ import NavbarLinks from "../molecules/NavbarLinks";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center mx-10 my-5">
+    <header className="flex justify-between items-center mx-10 py-5">
       <LogoBrand />
       <NavbarLinks />
       <LinkSocialMedia />
