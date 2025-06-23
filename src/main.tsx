@@ -6,13 +6,16 @@ import { Provider } from "react-redux";
 
 import ThemeProvider from "./Context/ThemeContext.tsx";
 import { Store } from "./Store/store.ts";
+import OpenSidebarProvider from "./Context/OpenSidebar.tsx";
 
 // #1b1b1b
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
       <Provider store={Store}>
-        <App />
+        <OpenSidebarProvider>
+          <App />
+        </OpenSidebarProvider>
       </Provider>
     </ThemeProvider>
   </StrictMode>
