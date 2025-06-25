@@ -13,8 +13,8 @@ const NavbarLinks = () => {
     >
       <div
         className={cn(
-          "flex items-center gap-4 border-1 max-sm:w-64 w-full border-black max-sm:px-6 px-10 max-sm:mr-10 bg-[#ffffffe3] py-3 rounded-full",
-          isOpen ? "" : "hidden"
+          "flex items-center gap-4 border-1  max-sm:w-64 w-72 border-black max-sm:px-6 px-10 max-sm:mr-10 bg-[#ffffffe3] py-3 rounded-full",
+          `max-sm:${isOpen ? "" : "hidden"}`
         )}
       >
         <LinkHeader children="Home" To="/" />
