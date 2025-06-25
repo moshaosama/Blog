@@ -4,7 +4,7 @@ import Hero_Pages from "../templates/Hero_Pages";
 export const Contact = () => {
   return (
     <Hero_Pages ImageUrl="/download.png">
-      <div>
+      <div className="flex flex-col gap-5">
         <h1 className="text-4xl font-bold">Let's Connect!</h1>
         <form className="text-2xl flex gap-1 flex-col">
           <div className="flex gap-3 flex-wrap items-center">

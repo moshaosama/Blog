@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Components/Pages/Home";
 import About from "../Components/Pages/About";
 import { Contact } from "../Components/Pages/Contact";
+import Categories from "../Components/Pages/Categories";
 
 const RouterPages = () => {
   const Routes = createBrowserRouter([
@@ -21,6 +22,19 @@ const RouterPages = () => {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/categories",
+          element: <Categories />,
+          children: [
+            {
+              index: true,
+            },
+            {
+              path: ":category_id",
+              element: <h1>asdsa</h1>,
+            },
+          ],
         },
       ],
     },

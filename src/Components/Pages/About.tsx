@@ -1,9 +1,8 @@
 import { Link } from "react-router";
 import { useTheme } from "../../Context/ThemeContext";
-import { MarqueeData } from "../../Data/MarqueeData";
 import { Skills } from "../../Data/Skills";
 import { cn } from "../../lib/cn";
-import NewTicker from "../Atomic/NewTicker";
+
 
 import DisplaySkills from "../organisms/DisplaySkills";
 import Hero_Pages from "../templates/Hero_Pages";
@@ -12,7 +11,7 @@ const About = () => {
   const { theme } = useTheme();
   return (
     <>
-      <NewTicker data={MarqueeData} />
+      
       <Hero_Pages ImageUrl="/character.webp">
         <h1 className="text-7xl max-sm:text-4xl font-bold w-[50pc] max-sm:w-full max-sm:text-center">
           Dream Big, Work Hard, Achieve More!

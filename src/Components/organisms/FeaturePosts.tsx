@@ -6,7 +6,7 @@ import Sections from "../templates/Sections";
 const FeaturePosts = () => {
   return (
     <>
-      <Sections GridColumns={2} Title={"Featured Posts"}>
+      <Sections isAllDataBtn={false} GridColumns={2} Title={"Featured Posts"}>
         <Article_Feature_Posts />
         <div className="flex flex-col justify-between">
           <PostDetailInfo
