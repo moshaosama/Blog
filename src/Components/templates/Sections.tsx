@@ -20,7 +20,7 @@ const Sections = ({
         <HeaderForSection Title={Title} />
         {isAllDataBtn ? (
           <Link
-            to={"/categories"}
+            to={"/categories/all"}
             className={cn(
               "underline mr-16 text-xl cursor-pointer",
               theme == "light" ? "text-[#7b00d3]" : "text-[#ffdb4d]"

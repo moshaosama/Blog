@@ -4,6 +4,7 @@ import Home from "../Components/Pages/Home";
 import About from "../Components/Pages/About";
 import { Contact } from "../Components/Pages/Contact";
 import Categories from "../Components/Pages/Categories";
+import DisplayDataBlogs from "../Components/templates/DisplayDataBlogs";
 
 const RouterPages = () => {
   const Routes = createBrowserRouter([
@@ -32,7 +33,7 @@ const RouterPages = () => {
             },
             {
               path: ":category_id",
-              element: <h1>asdsa</h1>,
+              element: <DisplayDataBlogs />,
             },
           ],
         },
