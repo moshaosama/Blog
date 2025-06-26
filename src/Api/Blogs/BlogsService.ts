@@ -13,6 +13,18 @@ class BlogsService extends ParentService {
       );
     }
   }
+  async GetBlogByCategory(blog_category: string, thunkAPi: any) {
+    try {
+      const response = await axios.get(
+        `${this.url}/get-blogs-by-category/${blog_category}`
+      );
+      return response.data;
+    } catch (err: any) {
+      return thunkAPi.rejectWithValue(
+        err?.response?.data?.message || "Something went wrong"
+      );
+    }
+  }
 }
 
 export const blogService = new BlogsService();

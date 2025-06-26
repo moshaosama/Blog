@@ -14,6 +14,7 @@ const PostDetailInfo = ({
   Width,
   Header,
   textAnimation,
+  Date,
 }: PostDetailInfoProps) => {
   const { theme } = useTheme();
   const { PostDetail } = MediaQueryStyle;
@@ -38,7 +39,7 @@ const PostDetailInfo = ({
         <div className={cn(theme === "light" ? "text-black" : "text-white")}>
           <TextAnimation Title={textAnimation} fontSize="20px" />
         </div>
-        <DatePost />
+        <DatePost Date={Date as string} />
       </div>
     </div>
   );
