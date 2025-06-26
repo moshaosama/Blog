@@ -4,3 +4,7 @@
   background-color: #bbb;
   color: black;
 }
+
+html {
+  scroll-behavior: smooth;
+}

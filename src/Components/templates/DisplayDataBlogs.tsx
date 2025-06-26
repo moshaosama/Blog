@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import useGetBlogs from "../../Hooks/useGetBlogs";
 import { TextAnimation } from "../Atomic/TextAnimation";
 import PostDetailInfo from "../molecules/PostDetailInfo";
@@ -22,7 +23,7 @@ const DisplayDataBlogs = () => {
       ) : (
         <div className="mx-20 max-sm:mx-0 my-20 grid grid-cols-3 max-sm:grid-cols-1 gap-5 max-sm:gap-0 max-sm:gap-y-10">
           {BlogByCategory.result.map((blog, index: number) => (
-            <div key={index}>
+            <Link to={String("/" + blog.id)} key={index}>
               <PostDetailInfo
                 Header={blog.category}
                 Date={blog.date}
@@ -34,7 +35,7 @@ const DisplayDataBlogs = () => {
                   <TextAnimation Title={blog.title} fontSize="20px" />
                 }
               />
-            </div>
+            </Link>
           ))}
         </div>
       )}

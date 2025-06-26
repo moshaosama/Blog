@@ -11,7 +11,7 @@ const Article_Feature_Posts = () => {
         Width="100%"
         isText={true}
       >
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 absolute bottom-14 max-sm:bottom-2 left-12 max-sm:left-3">
           <ButtonTags BackGround="black" Title="Javascript" />
           <TextAnimation
             fontSize="25px"

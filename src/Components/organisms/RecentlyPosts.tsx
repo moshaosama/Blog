@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import useGetBlogs from "../../Hooks/useGetBlogs";
 import { TextAnimation } from "../Atomic/TextAnimation";
 import PostDetailInfo from "../molecules/PostDetailInfo";
@@ -9,7 +10,7 @@ const RecentlyPosts = () => {
   return (
     <Sections isAllDataBtn={true} GridColumns={3} Title={"Recent Posts"}>
       {Blogs.result.slice(0, 6).map((blog, index: number) => (
-        <div className="flex justify-center" key={index}>
+        <Link to={"/" + blog.id} className="flex justify-center" key={index}>
           <PostDetailInfo
             Header={blog.category}
             Height="15pc"
@@ -18,7 +19,7 @@ const RecentlyPosts = () => {
             flexDirection="column"
             textAnimation={<TextAnimation Title={blog.title} fontSize="20px" />}
           />
-        </div>
+        </Link>
       ))}
     </Sections>
   );

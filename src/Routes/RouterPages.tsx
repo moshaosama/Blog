@@ -5,6 +5,7 @@ import About from "../Components/Pages/About";
 import { Contact } from "../Components/Pages/Contact";
 import Categories from "../Components/Pages/Categories";
 import DisplayDataBlogs from "../Components/templates/DisplayDataBlogs";
+import { CategoryId } from "../Components/Pages/CategoryId";
 
 const RouterPages = () => {
   const Routes = createBrowserRouter([
@@ -23,6 +24,10 @@ const RouterPages = () => {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/:blog_id",
+          element: <CategoryId />,
         },
         {
           path: "/categories",

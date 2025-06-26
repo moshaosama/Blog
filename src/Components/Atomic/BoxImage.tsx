@@ -25,13 +25,13 @@ const BoxImage = ({
         {isText && (
           <div
             className={cn(
-              "absolute top-0 bg-[#00000070] rounded-2xl h-full",
+              "bg-[#00000070] rounded-2xl h-full absolute top-0",
               BoxImage
             )}
             style={{ width: Width }}
           ></div>
         )}
-        <div className="absolute bottom-20 max-sm:bottom-2 left-20 max-sm:left-3">
+        <div>
           {isText && <div className="text-white">{children}</div>}
         </div>
       </div>

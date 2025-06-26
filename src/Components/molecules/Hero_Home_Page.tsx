@@ -11,7 +11,7 @@ const Hero_Home_Page = () => {
         Height="50pc"
         isText={true}
       >
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 absolute bottom-20 max-sm:bottom-2 left-20 max-sm:left-3">
           <ButtonTags Title="Web Development" BackGround="black" />
           <div>
             <TextAnimation
