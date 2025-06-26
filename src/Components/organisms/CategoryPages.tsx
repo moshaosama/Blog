@@ -6,7 +6,7 @@ import CategoryDetails from "../molecules/CategoryDetails";
 const CategoryPages = () => {
   const { theme } = useTheme();
   return (
-    <div className="mx-20 mt-10">
+    <div className="mx-20 mt-10 max-sm:mx-0">
       <CategoryDetails />
       <hr
         className={cn(
