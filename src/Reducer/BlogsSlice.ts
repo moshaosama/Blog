@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchGetBlogs } from "../Actions/GetBlogs";
-import { fetchGetBlogsByCategory } from "../Actions/GetBlogsByCategory";
 
 interface initialState {
   Blogs: {
