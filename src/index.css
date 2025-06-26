@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.Active {
+  background-color: #bbb;
+  color: black;
+}
