@@ -6,7 +6,7 @@ const CategoryDetails = () => {
   return (
     <>
       <Text_Elements>
-        <h1 className="text-3xl font-bold">{pathname}</h1>
+        <h1 className="text-3xl font-bold">#{pathname.slice(12)}</h1>
         <p>Discover more categories and expand your knowledge!</p>
       </Text_Elements>
     </>
