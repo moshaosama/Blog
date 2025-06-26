@@ -1,11 +1,18 @@
+import { useTheme } from "../../Context/ThemeContext";
 import useGetBlogs from "../../Hooks/useGetBlogs";
+import { cn } from "../../lib/cn";
 
 const CategoryInformations = () => {
   const { BlogById } = useGetBlogs();
-
+  const { theme } = useTheme();
   return (
     <>
-      <div className="flex flex-col gap-10">
+      <div
+        className={cn(
+          "flex flex-col gap-10",
+          theme === "light" ? "text-black" : "text-white"
+        )}
+      >
         <div className="text-xl flex items-center">
           <p>
             <span className="text-6xl font-semibold">U</span>ntil now, trying to
